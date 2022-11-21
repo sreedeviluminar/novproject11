@@ -1,6 +1,6 @@
 class Resume{
   //instance variables => globaly declared variables/ inside the class outside all other statements
-  String? name =" ";
+  String? name ;
   int   age   = 20;
   int phone   = 9876543210;
   static  String course = "Flutter";   //depends on class  classname.variable_name
