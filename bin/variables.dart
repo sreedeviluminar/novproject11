@@ -1,5 +1,5 @@
 void main(){
-  String name  = "Anu";  //var
+  String name  = "Anu";  //variable declaration
   int age      = 20;
   double mark  = 8.4;
   String email = 'anu@gmail.com';
