@@ -25,10 +25,11 @@ class Mathss{
   }
 }
 
-void main(){
+void main() {
   Mathss obj = Mathss(); //for accessing functions inside the class we need to create object
-  obj.add();
-  obj.sub();
-  obj.mul();
-  obj.div();
+  obj
+    ..add()
+    ..sub()
+    ..mul()
+    ..div();
 }
