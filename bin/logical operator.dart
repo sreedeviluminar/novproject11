@@ -7,6 +7,4 @@ void main(){
   print( !(uname == 'abc123'   &&   password == 12345) );
 
 
-
-
 }

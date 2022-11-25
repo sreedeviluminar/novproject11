@@ -30,6 +30,6 @@ void main() {
   obj
     ..add()
     ..sub()
-    ..mul()
-    ..div();
+    ..div()
+    ..mul();
 }
