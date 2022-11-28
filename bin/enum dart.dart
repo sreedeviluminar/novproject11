@@ -1,11 +1,4 @@
-enum Size{
-  xs,
-  s,
-  m,
-  l,
-  xl,
-  xxl
-}
+enum Size { xs, s, m, l, xl, xxl }
 
 void main() {
   var status = Size.l;
