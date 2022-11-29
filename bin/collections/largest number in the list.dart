@@ -1,25 +1,55 @@
 void main(){
+  print('multiples of 2');
 
-   var list = [1,20,43,3,11,56,87,25,17];
-   var largest = list[0];  //1
+  var list =[1,-3,7,9,2,4,6,0,-6,-4,-2,0,10,78,5];
 
-   for(int i = 0; i < list.length; i++){
+   var largest = list[0];
+   for(int i = 0  ; i < list.length ; i++){
 
-     if (largest < list[i]){
-
-         largest = list[i];
+     if (list[i] % 2 == 0 && list[i] > 0){
+         print(list[i]);
+     }
+     if(largest < list[i]){
+       largest = list[i];
      }
    }
-   print(largest);
+   print('largst value is $largest');
+
+   print('+ve -ve  and zeros count');
+
+   int pcount = 0 ,
+       ncount = 0 ,
+       zcount = 0;
+
+   for(int i = 0  ; i < list.length ; i++) {
+
+      if(list[i] > 0 ){
+        pcount++;
+
+      }else if(list[i] < 0){
+        ncount++;
+
+      }else{
+        zcount++;
+      }
+    }
+   print('positive count  =$pcount');
+   print('negative count  =$ncount');
+   print('zero  count  =$zcount');
 }
+
+
+
+
+
+
+
+
 /// largest = 1
-/// i = 0  0<9   true    if 1  < list[0]   1 < 1  false  i++
-/// i = 1  1<9   true    if 1  < list[1]   1 < 20 true   largest = 20
-/// i = 2  2<9   true    if 20 < list[2]  20 < 43 true   largest = 43
-/// i = 3  3<9   true    if 43 < list[3]  43 < 3  false  largest = 43
-/// i = 4  4<9   true    if 43 < list[4]  43 < 11 false  largest = 43
-/// i = 5  5<9   true    if 43 < list[5]  43 < 56 true   largest = 56
-/// i = 6  6<9   true    if 56 < list[6]  56 < 87 true   largest = 87
-/// i = 7  7<9   true    if 87 < list[7]  87 < 25 false  largest = 87
-/// i = 8  8<9   true    if 87 < list[8]  87 < 17 false  largest = 87
-/// i = 9  9<9   false exit from the loop   so LARGEST VALUE IS  87
+/// i = 0   0<12   true   if largest < list[0]  1 < 1  false   largest = 1  i++
+/// i = 1   1<12   true   if largest < list[1]  1 < -3 false   largest = 1  i++
+/// i = 2   2<12   true   if largest < list[2]  1 < 7  true    largest = 7  i++
+/// i = 3   3<12   true   if largest < list[3]  7 < 9  true    largest = 9  i++
+/// i = 4   4<12   true   if largest < list[4]  9 < 0  false   largest = 9  i++
+/// i = 5   5<12   true   if largest < list[5]  9 < -6 false   largest = 9  i++
+///
