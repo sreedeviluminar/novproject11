@@ -1,18 +1,19 @@
-void main(){
-  var result = add(); // it will print sum from the add function
-  print(result);
+void main() {
 
-  print(show("Hari", 20));
+  //print(show());
+  var data = show();
+  print(data);
+  print(add(20, 45,"hanna"));
 }
 
 ///default function with return type
- int add(){
-    int sum = 5+2+7;
-    print(sum);
-    return 700;
+String show(){
+  print('Hello');
+  return 'Welcome';
 }
 ///parameterised function with return type
-String show(String name , int age) {
-  print('my name is $name');
-  return 'I am $age yrs old';
+
+int add( int a , int b, String name){
+  var sum = a+b;
+  return sum;
 }

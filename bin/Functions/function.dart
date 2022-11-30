@@ -5,6 +5,7 @@ void main(){
    func4('teena',"Kottayam", cgpa: 7.6);
    func5("Flutter",rate: 250000, hours: 1.5);
    func5("Python");
+   print(show());
 }
 /// 1. default function / no argument function
 void funct1(){
@@ -26,3 +27,6 @@ void func4(String name , String location,{int? age , required double cgpa} ){
 void func5(String course , {int? rate , double hours = 2}){
      print('course = $course  , rate = $rate  hours = $hours');
 }
+
+///Lambda Function / arrow function
+String show() => 'Hello' ;
