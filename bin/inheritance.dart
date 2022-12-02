@@ -1,22 +1,24 @@
 //single inheritance
 // extends keyword used for implementing inheritance
 class Parent{
-  String name ="Paul";
-  int age = 50;
-  void data(){
-    print("Father is an Engineer");
+  String fname = "Paul";
+  int fage     = 50;
+  void work(){
+    print('Fathers job  : Doctor');
   }
 }
-class child extends Parent{
+
+class Child extends Parent{
   String cname ="Anu";
-  int cage = 20;
+  int cage     =20;
 }
 
-void main(){
-  var obj = child();
-  print('Fathers name : ${obj.name}');
-  print('Fathers age  : ${obj.age}');
-  obj.data();
-  print('Child name   : ${obj.cname}');
-  print('Child  age   : ${obj.cage}');
+void main() {
+  Child obj = Child();
+  print('Fathers name : ${obj.fname}');
+  print('Fathers age  : ${obj.fage}');
+  obj.work();
+  print('Child Name   : ${obj.cname}');
+  print("Child age    : ${obj.cage}");
 }
+
