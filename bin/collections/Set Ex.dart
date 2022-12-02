@@ -1,6 +1,6 @@
 void main() {
  Set set1 = {1,2,3,4,5,6,3};
- Set<int> set2 = Set();
+ Set<int> set2 = {};
 
  set2.add(30);
  set2.add(1);
