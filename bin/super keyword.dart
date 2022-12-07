@@ -19,7 +19,7 @@ class Child extends Father{
      print("name of father  = ${super.name}");
      print("Age of Father   = ${super.age}");
 
-     display();
+     super.display();
    }
 }
 void main(){
