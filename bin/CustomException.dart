@@ -8,15 +8,12 @@ class MyException implements Exception{
     return "Exception caught $msg";
   }
 }
-
 class Bank{
 
   void withdraw(int amount){
-    print('enter the amount u want to withdraw');
+    print('$amount is the amount u want to withdraw');
     if(amount < 500 ){
-
       throw MyException("Not a valid amount");
-
     }else{
       print("Success");
     }
@@ -25,7 +22,7 @@ class Bank{
 void main(){
   var obj = Bank();
   try {
-    obj.withdraw(300);
+    obj.withdraw(200);
   }catch(e){
     print(e.toString());
   }

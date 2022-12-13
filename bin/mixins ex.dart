@@ -10,7 +10,7 @@ mixin B{
   void add(){}
  }
 /// class with inheritance using mixin
- class C with A, B {
+class C with A, B {
 
   @override
   void display() {

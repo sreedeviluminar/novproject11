@@ -1,11 +1,13 @@
 //individually  demo  is  a normal class
-class Demo{
+class Demo {
   String name = 'Anu';
   int age = 20;
-  void show(){
+
+  void show() {
     print('inside show');
   }
 }
+
 class C1 extends Demo{  } // corresponding to c1 Demo is Parent class
 
 class C2 implements Demo,C1{ //corresponding to c2 Demo is an interface
