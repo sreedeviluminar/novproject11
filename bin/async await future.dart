@@ -25,11 +25,9 @@
 
 void main() async {
   print('start fetching recipes');
-
   await Future.delayed(Duration(seconds: 3), () {
     print('recipes fetched');
   });
-
   print('after fetching recipes');
   String computation = 'a random computation';
   print(computation);
