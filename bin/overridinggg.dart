@@ -1,6 +1,6 @@
 
 class Mathss{
-  void add(){
+  void add(int a){
     print('sum1 = ${10+30}');
   }
   void display(){
@@ -11,8 +11,8 @@ class Mathss{
 class operations extends Mathss{
 
   @override
-  void add() {
-    super.add();
+  void add(int b) {
+    super.add(10);
     int a = 20,
         b = 30;
     print('sum2 = ${a+b}');
@@ -21,5 +21,5 @@ class operations extends Mathss{
 
 void main(){
   var obj = operations();
-  obj.add();
+  obj.add(9);
 }
