@@ -1,5 +1,4 @@
 class MyException implements Exception{
-
   String? msg;
   MyException([this.msg]);
 
@@ -9,7 +8,6 @@ class MyException implements Exception{
   }
 }
 class Bank{
-
   void withdraw(int amount){
     print('$amount is the amount u want to withdraw');
     if(amount < 500 ){

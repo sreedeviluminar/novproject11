@@ -1,4 +1,6 @@
 void main() {
+  List m = [];
+
   ///List.empty()
   var list1 = List.empty(growable: true);
   list1.addAll([70, 2, 3, 4, 5]);
@@ -19,11 +21,11 @@ void main() {
   print(list4);
 
   ///List.generate()
-  var list5 = List.generate(10, (index) => index + (6 * 2));
+  var list5 = List.generate(10, (index) => index*2);
   print(list5);
 
   ///List.unmodifiable();
   var list6 = List.unmodifiable([1,2,3,4]);
-  list6[2] = 8;
+  //list6[2] = 8;
   print(list6);
 }
